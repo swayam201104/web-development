@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* .box1{
+    background-color: rgb(24, 96, 135);
+    color: aliceblue;
+} */
+
+/* .box1{
+    background-color: #102a43;
+    color: aliceblue;
+    padding: 50px;
+    padding-left: 50px;
+    padding-bottom: 50;
+    padding-top: 70;
+} */
+
+.box1{
+    background-color: rgb(24, 96, 135);
+    color: aliceblue;
+    /* padding: 50px; */
+    padding-left: 50px;
+    padding-bottom: 50;
+    padding-top: 70;
+}
+
+
+
+.box1 h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.box1 p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 600px;
+}
+
+
+header {
+    background-color: #102a43;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.navbar {
+    min-height: 75px;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    font-size: 15px;
+    color: #e6edf5;
+    transition: color 0.3s;
+    text-decoration: none;
+}
+
+.category-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.category-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(16, 42, 67, 0.10);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.category-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: contain;
+    padding: 15px;
+    background-color: #f1f5f9;
+}
+
+.content {
+    padding: 25px;
+}
+
+.content h3 {
+    color: #102a43;
+    font-size: 23px;
+    margin-bottom: 8px;
+}
+
+.content p {
+    color: #667085;
+    margin-bottom: 20px;
+}
+
+.btn{
+    background-color:orange;
+    border: 1px ;
+    border-radius: 5px;
+    color: black;
+    padding: 10px;
+    
+}
+
+
+/* .footer{
+    background-color: #102a43;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+} */
+
+.footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+
+.vehicle-container {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.vehicle-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(16, 42, 67, 0.09);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.vehicle-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 24px rgba(16, 42, 67, 0.15);
+}
+
+.vehicle-card img {
+    width: 100%;
+    height: 175px;
+    object-fit: contain;
+    padding: 12px;
+    background-color: #eef2f6;
+}
+
+.vehicle-content {
+    padding: 18px;
+}
+
+.vehicle-content h3 {
+    color: #102a43;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.vehicle-content p {
+    color: #667085;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.vehicle-content .price {
+    color: #1b6b4b;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.vehicle-content .btn {
+    text-align: center;
+    width: 100%;
+    padding: 10px 8px;
+}
+.cards {
+    background-color: white;
+    text-align: center;
+}
+.cardcontent{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.benefit {
+    padding: 28px 22px;
+    text-align: center;
+    background-color: #f1f5f9;
+    border-radius: 10px;
+    border-bottom: 4px solid #ffbd59;
+}
+
+.benefit h3 {
+    color: #102a43;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    color: #667085;
+    font-size: 15px;
+}
+
+
+
+/* Booking form */
+
+.booking-form {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.booking-form label {
+    font-weight: bold;
+    color: #102a43;
+}
+
+.booking-form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccd5df;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.booking-form input:focus {
+    outline: 2px solid #2878a5;
+    border-color: #2878a5;
+}
+
+.booking-form button {
+    margin-top: 12px;
+}
+
+#bookingMessage {
+    margin-top: 10px;
+    text-align: center;
+    color: #246f4b;
+    font-weight: bold;
+}

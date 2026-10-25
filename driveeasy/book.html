@@ -1,0 +1,71 @@
+
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Book Your Ride | DriveEasy Rentals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">DriveEasy Rentals</a>
+
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bikes.html">Two-Wheelers</a></li>
+                <li><a href="cars.html">Four-Wheelers</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="categories section">
+        <h2>Book Your Ride</h2>
+        <p class="section-description">
+            Fill in the details below to request your vehicle.
+        </p>
+
+        <form id="bookingForm" class="booking-form">
+
+            <label for="customerName">Your Name</label>
+            <input type="text" id="customerName"
+                   name="customerName" required>
+
+            <label for="vehicle">Selected Vehicle</label>
+            <input type="text" id="vehicle"
+                   name="vehicle" required>
+
+            <label for="bookingDate">Pickup Date</label>
+            <input type="date" id="bookingDate"
+                   name="bookingDate" required>
+
+            <label for="rentalDays">Number of Days</label>
+            <input type="number" id="rentalDays"
+                   name="rentalDays" min="1" value="1" required>
+
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact"
+                   name="contact" pattern="[0-9]{10}"
+                   maxlength="10" placeholder="10-digit mobile number"
+                   required>
+
+            <button type="submit" class="btn">Submit Booking Request</button>
+
+            <p id="bookingMessage" role="status"></p>
+
+        </form>
+    </main>
+
+    <footer class="footer">
+        <p>DriveEasy Rentals</p>
+        <p>Your journey begins here.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
